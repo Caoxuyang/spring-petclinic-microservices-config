@@ -1,7 +1,7 @@
 ﻿spring:
   application:
     name: customers-service-from-config-server
-  profiles: default
+  # profiles: default
 
 server:
   port: 8080
