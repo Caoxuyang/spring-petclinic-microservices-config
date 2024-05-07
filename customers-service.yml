@@ -1,4 +1,6 @@
 ﻿spring:
+  application:
+    name: customers-service-from-config-server
   profiles: default
 
 server:
