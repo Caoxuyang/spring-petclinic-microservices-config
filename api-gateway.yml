@@ -5,19 +5,19 @@ spring:
     gateway:
       routes:
         - id: vets-service
-          uri: lb://vets-service
+          uri: lb://vets-service-linked-config-server
           predicates:
             - Path=/api/vet/**
           filters:
             - StripPrefix=2
         - id: visits-service
-          uri: lb://visits-service
+          uri: lb://visits-service-linked-config-server
           predicates:
             - Path=/api/visit/**
           filters:
             - StripPrefix=2
         - id: customers-service
-          uri: lb://customers-service
+          uri: lb://customers-service-linked-config-server
           predicates:
             - Path=/api/customer/**
           filters:
