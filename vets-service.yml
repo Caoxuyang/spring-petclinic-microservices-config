@@ -5,4 +5,4 @@
 
 spring:
   application:
-    name: vets-service-linked-configserver
+    name: vets-service-linked-config-server
