@@ -4,4 +4,4 @@
     profiles: default
 
 server:
-  port: 7777
+  port: 8080
