@@ -1,6 +1,2 @@
-spring:
-  application:
-    name: visits-service
-
-server:
-  port: 8080
+﻿spring:
+  profiles: default
