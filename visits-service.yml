@@ -4,3 +4,10 @@
 spring:
   application:
     name: visits-service-linked-config-server
+
+---
+spring:
+  config:
+    activate:
+      on-profile: default
+---
