@@ -6,10 +6,3 @@
 spring:
   application:
     name: vets-service-linked-config-server
-
----
-spring:
-  config:
-    activate:
-      on-profile: default
----
