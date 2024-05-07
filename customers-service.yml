@@ -1,5 +1,3 @@
-﻿spring:
-  profiles: default
 spring:
   application:
     name: customers-service-linked-config-server
