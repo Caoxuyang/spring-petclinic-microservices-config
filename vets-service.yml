@@ -1,4 +1,2 @@
-spring:
-  config:
-    activate:
-      on-profile: default
+﻿spring:
+  profiles: default
