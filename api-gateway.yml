@@ -5,19 +5,19 @@ spring:
     gateway:
       routes:
         - id: vets-service
-          uri: lb://vets-service-linked-config-server
+          uri: lb://vets-service
           predicates:
             - Path=/api/vet/**
           filters:
             - StripPrefix=2
         - id: visits-service
-          uri: lb://visits-service-linked-config-server
+          uri: lb://visits-service
           predicates:
             - Path=/api/visit/**
           filters:
             - StripPrefix=2
         - id: customers-service
-          uri: lb://customers-service-linked-config-server
+          uri: lb://customers-service
           predicates:
             - Path=/api/customer/**
           filters:
@@ -31,10 +31,10 @@ zuul:
   prefix: /api
   ignoredServices: '*'
   routes:
-    vets-service-linked-config-server: /vet/**
-    visits-service-linked-config-server: /visit/**
-    customers-service-linked-config-server: /customer/**
-    api-gateway-linked-config-server: /gateway/**
+    vets-service: /vet/**
+    visits-service: /visit/**
+    customers-service: /customer/**
+    api-gateway: /gateway/**
 server:
   port: 8080
   compression:
