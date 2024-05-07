@@ -31,10 +31,10 @@ zuul:
   prefix: /api
   ignoredServices: '*'
   routes:
-    vets-service: /vet/**
-    visits-service: /visit/**
-    customers-service: /customer/**
-    api-gateway: /gateway/**
+    vets-service-linked-config-server: /vet/**
+    visits-service-linked-config-server: /visit/**
+    customers-service-linked-config-server: /customer/**
+    api-gateway-linked-config-server: /gateway/**
 server:
   port: 8080
   compression:
